@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('goodow.controllers',['goodow.services'])
+angular.module('drive.controllers',['drive.services'])
 .controller('Ctrl1', ['$scope',function($scope) {
        $scope.helloworld1 = 'helloworld1';
     }])

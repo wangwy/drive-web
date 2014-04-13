@@ -1,12 +1,6 @@
 {
   "name": "drive-web",
   "dependencies": {
-    "angular-bootstrap":"0.10.0",
-    "realtime-channel": "0.5.5",
-    "bootstrap":"3.1.1",
-    "d3":" 3.4.3",
-    "angular-route":"1.2.14",
-    "angular-touch":"1.2.14",
-    "realtime-svg":"v0.1.0"
+    "angular-route":"1.2.14"
   }
 }

@@ -4,7 +4,7 @@
 
 
 
-angular.module('goodow.services', [])
+angular.module('drive.services', [])
   .factory('helloworldService', function(){
         return function(){
             return 'helloworld by service';

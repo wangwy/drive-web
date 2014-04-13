@@ -2,7 +2,7 @@
 
 /* Filters */
 
-angular.module('goodow.filters', [])
+angular.module('drive.filters', [])
 .filter('interpolate', ['version', function(version) {
      return function(text) {
        return String(text).replace(/\%VERSION\%/mg, version);

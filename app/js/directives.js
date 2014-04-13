@@ -3,7 +3,7 @@
 /* Directives */
 
 
-angular.module('goodow.directives', ['goodow.controllers'])
+angular.module('drive.directives', ['drive.controllers'])
 .directive('helloworld', function() {
     return {
         restrict:'E',

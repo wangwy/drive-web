@@ -1,7 +1,13 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('goodow', ['ngRoute','ngTouch','goodow.controllers','goodow.services','goodow.directives','goodow.filters','goodow.ui.svg'])
+
+angular.module('drive', [
+    'ngRoute',
+    'drive.controllers',
+    'drive.services',
+    'drive.directives',
+    'drive.filters'])
 .config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 //  $locationProvider.html5Mode(true).hashPrefix('');
   $routeProvider.when('/helloworld1', {templateUrl: 'partials/helloworld1.html',controller:'Ctrl1'})
