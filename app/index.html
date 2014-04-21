@@ -50,14 +50,10 @@
     <!--container   content-->
   <div class="container">
     <div  class="row">
-      <div class="col-md-3">
-       <div class="list-group">
-            <a href="#/helloworld1" class="list-group-item active">
-              Helloworld1
-            </a>
-            <a href="#/helloworld2" class="list-group-item">Helloworld2</a>
+      <div class="col-md-3" ng-controller="MenuCtrl">
+          <div class="list-group" >
+            <a href="{{menu.url}}" ng-click="setMenu($index)" class="list-group-item {{menu.className_}}"  ng-repeat="menu in menuList">{{menu.name}}</a>
           </div>
-
       </div>
       <div class="col-md-9">
         <div class="main" ng-view></div>
@@ -78,6 +74,7 @@
   <script src="bower_components/angular-touch/angular-touch.js"></script>
   <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+  <script type="text/javascript" src="bower_components/goodjs-grid/goodjs-grid.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>

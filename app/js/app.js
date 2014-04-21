@@ -4,17 +4,21 @@
 
 angular.module('drive', [
     'ngRoute',
+    'good.ui.grid',
     'drive.controllers',
     'drive.services',
     'drive.directives',
     'drive.filters'])
 .config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 //  $locationProvider.html5Mode(true).hashPrefix('');
-  $routeProvider.when('/helloworld1', {templateUrl: 'partials/helloworld1.html',controller:'Ctrl1'})
-      .when('/helloworld2', {templateUrl: 'partials/helloworld2.html',controller:'Ctrl2'})
+  $routeProvider
+      .when('/attachment', {templateUrl: 'partials/data-grid.html',controller:'AttachmentCtrl'})
+      .when('/attachmentActivity', {templateUrl: 'partials/data-grid.html',controller:'AttachmentActivityCtrl'})
+      .when('/device', {templateUrl: 'partials/data-grid.html',controller:'DeviceCtrl'})
+      .when('/deviceActivity', {templateUrl: 'partials/data-grid.html',controller:'DeviceActivityCtrl'})
       .otherwise({'redirectTo':'/index.html' });
 }])
 //
-.run(['$templateCache',function($templateCache){
-    $templateCache.put('partials/helloworld1.html',"<h1 style='color:blue;'>{{helloworld1}}</h1>");
-}]);
+//.run(['$templateCache',function($templateCache){
+//    $templateCache.put('partials/helloworld1.html',"<h1 style='color:blue;'>{{helloworld1}}</h1>");
+//}]);

@@ -1,6 +1,7 @@
 {
   "name": "drive-web",
   "dependencies": {
-    "angular-route":"1.2.14"
+    "angular-route":"1.2.14",
+    "goodjs-grid":"033cd2f9b2389170e6c48afd423c539bf7915797"
   }
 }
