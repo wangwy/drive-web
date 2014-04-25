@@ -12,10 +12,7 @@ angular.module('drive', [
 .config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
 //  $locationProvider.html5Mode(true).hashPrefix('');
   $routeProvider
-      .when('/attachment', {templateUrl: 'partials/data-grid.html',controller:'AttachmentCtrl'})
-      .when('/attachmentActivity', {templateUrl: 'partials/data-grid.html',controller:'AttachmentActivityCtrl'})
-      .when('/device', {templateUrl: 'partials/data-grid.html',controller:'DeviceCtrl'})
-      .when('/deviceActivity', {templateUrl: 'partials/data-grid.html',controller:'DeviceActivityCtrl'})
+      .when('/datagrid/:type', {templateUrl: 'partials/data-grid.html',controller:'DateCtrl'})
       .otherwise({'redirectTo':'/index.html' });
 }])
 //
