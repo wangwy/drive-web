@@ -25,7 +25,7 @@ angular.module('drive.controllers',[])
     }])
     .controller('DateCtrl',['$scope', '$routeParams','DataGridService',function($scope,$routeParams,DataGridService){
         $scope.currentPage = 1;
-        var index = 'goodow';
+        var index = 'drive_test';
         var type = $routeParams.type;
         $scope.type = type;
         var pageSize = 5;
